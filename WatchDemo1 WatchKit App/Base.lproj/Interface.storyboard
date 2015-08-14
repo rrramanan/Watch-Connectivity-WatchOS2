@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
+    </dependencies>
+    <scenes>
+        <!--InterfaceController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="136" height="35" alignment="center" text="Picker 1" id="1cC-9z-wHB">
+                            <color key="textColor" red="0.086274512110000007" green="0.87058830259999997" blue="0.058823533359999999" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <button width="134" height="30" alignment="center" title="Tap to Show" id="lvh-Eq-DUU">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.050980396570000003" green="0.89411771299999998" blue="0.8078432083" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                            <connections>
+                                <action selector="show2" destination="AgC-eL-Hgc" id="hPD-7Y-D2w"/>
+                            </connections>
+                        </button>
+                        <picker width="1" height="100" alignment="left" focusStyle="stack" id="4RD-XB-Jxu">
+                            <connections>
+                                <action selector="pickerAciton:" destination="AgC-eL-Hgc" id="l3H-BJ-D56"/>
+                            </connections>
+                        </picker>
+                        <label width="136" height="35" alignment="center" text="Picker 2" id="2Su-P1-lyw">
+                            <color key="textColor" red="0.086274512110000007" green="0.87058830259999997" blue="0.058823533359999999" alpha="1" colorSpace="deviceRGB"/>
+                        </label>
+                        <button width="134" height="30" alignment="center" title="Tap to Show" id="1GX-oX-z7w">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.050980396570000003" green="0.89411771299999998" blue="0.8078432083" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                            <connections>
+                                <action selector="show3" destination="AgC-eL-Hgc" id="9eb-h0-ucQ"/>
+                            </connections>
+                        </button>
+                        <picker width="1" height="100" alignment="left" focusStyle="stack" id="YNH-Qv-ZVI">
+                            <connections>
+                                <action selector="pickerAction1:" destination="AgC-eL-Hgc" id="8eC-w9-Hlg"/>
+                            </connections>
+                        </picker>
+                        <label width="136" height="35" alignment="center" text="Picker 3" id="TZp-fV-Z9B">
+                            <color key="textColor" red="0.086274512110000007" green="0.87058830259999997" blue="0.058823533359999999" alpha="1" colorSpace="deviceRGB"/>
+                        </label>
+                        <button width="134" height="30" alignment="center" title="Tap to Show" id="Mf6-Ar-wDa">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.050980396570000003" green="0.89411771299999998" blue="0.8078432083" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                            <connections>
+                                <action selector="show4" destination="AgC-eL-Hgc" id="jrI-Gd-JEU"/>
+                            </connections>
+                        </button>
+                        <picker width="1" height="100" alignment="left" verticalAlignment="bottom" focusStyle="stack" id="67e-Vg-W4r">
+                            <connections>
+                                <action selector="pickerAction2:" destination="AgC-eL-Hgc" id="bZ3-ca-SU4"/>
+                            </connections>
+                        </picker>
+                        <group width="134" height="30" alignment="center" verticalAlignment="bottom" id="Qz0-bE-ZDO">
+                            <items>
+                                <button width="66" height="30" alignment="center" verticalAlignment="bottom" title="Alert" id="Rvi-Pp-y2h">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.9490196704864502" green="0.0" blue="0.33725491166114807" alpha="1" colorSpace="deviceRGB"/>
+                                    <connections>
+                                        <action selector="submit" destination="AgC-eL-Hgc" id="dxR-nT-N2d"/>
+                                    </connections>
+                                </button>
+                                <button width="66" height="30" alignment="center" verticalAlignment="bottom" title="Action" id="Xef-GL-Y7U">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.96078437566757202" green="0.46274513006210327" blue="0.098039224743843079" alpha="1" colorSpace="deviceRGB"/>
+                                    <connections>
+                                        <action selector="reset" destination="AgC-eL-Hgc" id="adH-oQ-bt1"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="136" height="75" alignment="left" text="Login with Demo Parent app " textAlignment="center" numberOfLines="2" id="ygK-Gc-NpV">
+                            <color key="textColor" red="0.9450981021" green="0.0" blue="0.36470589040000001" alpha="1" colorSpace="deviceRGB"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="absprop" destination="Mf6-Ar-wDa" id="DZ8-mT-563"/>
+                        <outlet property="dateprop" destination="lvh-Eq-DUU" id="Tdo-nS-Ebq"/>
+                        <outlet property="label1" destination="1cC-9z-wHB" id="VLe-JB-Tem"/>
+                        <outlet property="label2" destination="2Su-P1-lyw" id="Yjw-2w-sgQ"/>
+                        <outlet property="label3" destination="TZp-fV-Z9B" id="S8Q-xg-Q1f"/>
+                        <outlet property="loginLabel1" destination="ygK-Gc-NpV" id="ocV-bc-Qr6"/>
+                        <outlet property="picker1" destination="4RD-XB-Jxu" id="hYs-fH-vKn"/>
+                        <outlet property="picker2" destination="YNH-Qv-ZVI" id="UnO-ws-njE"/>
+                        <outlet property="picker3" destination="67e-Vg-W4r" id="1li-3W-XpZ"/>
+                        <outlet property="resetprop" destination="Xef-GL-Y7U" id="aUk-yJ-ofG"/>
+                        <outlet property="submitprop" destination="Rvi-Pp-y2h" id="d3s-pE-7Au"/>
+                        <outlet property="timeprop" destination="1GX-oX-z7w" id="OcI-27-uBh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-388" y="16.5"/>
+        </scene>
+    </scenes>
+</document>
