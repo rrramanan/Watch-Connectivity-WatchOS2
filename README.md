@@ -1,4 +1,4 @@
-# Watch-Connectivity-WatchOS2
+# Watch-Connectivity-WatchOS 2
 Using Watch Connectivity framework communication between iOS app and WatchKit Extension
 
 Athunticate Watch app using parent iOS app with Watch Connectivity framework in WatchOS2. Bidirectional
